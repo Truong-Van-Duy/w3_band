@@ -20,6 +20,10 @@ html {
     background-color: #000;
 }
 
+#nav {
+    display: inline-block;
+}
+
 #nav, .subnav {
     font-size: 0px;
     list-style-type: none;
@@ -51,6 +55,11 @@ html {
     
 }
 
+#nav .nav-arrow-down {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
 #nav li:hover .subnav {
     display: block;
 }
@@ -69,6 +78,20 @@ html {
     display: block;
     color: #000;
     padding: 8px 12px;
+}
+
+#header .search-icon {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.6;
+    padding: 12px 24px;
+}
+
+#header .search-icon:hover {
+    background-color: #f44336;
+    cursor: pointer;
 }
 
 #slider {
