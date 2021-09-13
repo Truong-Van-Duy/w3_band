@@ -12,7 +12,7 @@ html {
 }
 
 #main {
-
+    line-height: 1.5;
 }
 
 #header {
@@ -136,7 +136,7 @@ html {
 }
 
 #footer {
-
+    height: 10px;
 }
 
 
