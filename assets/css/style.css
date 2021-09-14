@@ -11,6 +11,10 @@ html {
     line-height: 1.5;
 }
 
+.clear {
+    clear: both;
+}
+
 #main {
     line-height: 1.5;
 }
@@ -134,6 +138,60 @@ html {
 #content {
     height: 1000px;
 }
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading,
+#content .section-sub-heading {
+    text-align: center;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+#content .about-description {
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+#content .member-list {
+    text-align: center;
+    padding: 32px 0;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% / 3);
+}
+
+#content .member-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .member-img {
+    width: 60%;
+    border-radius: 5px;
+}
+
 
 #footer {
     height: 10px;
