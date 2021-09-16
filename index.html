@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
+    <link rel="shortcut icon" href="./assets/img/logo/431238.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons.css">
     <link rel="" href="./assets/img/slider/slider1.jpg">
@@ -17,12 +18,12 @@
         <div id="header">
             <!-- Begin: Navigation -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -49,7 +50,7 @@
 
         <div id="content">
             <!-- About section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <div class="section-heading">THE BAND</div>
                 <div class="section-sub-heading">We love music</div>
                 <p class="about-description">We have created a fictional band website. Lorem ipsum dolor sit amet,
@@ -60,7 +61,7 @@
                     mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.</p>
-                <div class="member-list">
+                <div class="member-list row">
                     <div class="member-item">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/member-avatar/member1.jpg" alt="" class="member-img">
@@ -73,12 +74,11 @@
                         <p class="member-name">Name</p>
                         <img src="./assets/img/member-avatar/member1.jpg" alt="" class="member-img">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
 
             <!-- Tour section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section row">
                 <div class="content-section">
                     <div class="section-heading white-text">TOUR DATES</div>
                     <div class="section-sub-heading white-text">Remember to book your tickets!</div>
@@ -90,8 +90,8 @@
                     </ul>
 
                     <!-- Tour place -->
-                    <div class="tour-place">
-                        <div class="body-place">
+                    <div class="tour-place row">
+                        <div class="col col-third">
                             <img src="./assets/img/places/newyork.jpg" alt="" class="place-img">
                             <div class="place-info">
                                 <h3 class="place-name">New York</h3>
@@ -101,7 +101,7 @@
                                 <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="body-place">
+                        <div class="col col-third">
                             <img src="./assets/img/places/paris.jpg" alt="" class="place-img">
                             <div class="place-info">
                                 <h3 class="place-name">Paris</h3>
@@ -111,7 +111,7 @@
                                 <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="body-place">
+                        <div class="col col-third">
                             <img src="./assets/img/places/sanfran.jpg" alt="" class="place-img">
                             <div class="place-info">
                                 <h3 class="place-name">San Francisco</h3>
@@ -121,21 +121,61 @@
                                 <button href="#" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contact section -->
-            <div class="content-section">
+            <!-- Begin contact section -->
+            <div id="contact" class="content-section">
                 <div class="section-heading">CONTACT</div>
                 <div class="section-sub-heading">Fan? Drop a note!</div>
+
+                <div class="row contact-content">
+                    <div class="col col-half">
+                        <p class="contact-info"><i class="ti-location-pin"></i>Can Tho, Vietnam</p>
+                        <p class="contact-info"><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p class="contact-info"><i class="ti-email"></i>Email: band@email.com</p>
+                    </div>
+
+                    <div class="col col-half">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" class="form-control" required placeholder="Name">
+                                </div>
+
+                                <div class="col col-half">
+                                    <input type="email" class="form-control" required placeholder="Email">
+                                </div>
+
+                                <div class="col col-full">
+                                    <input type="text" class="form-control mt-8" required placeholder="Message">
+                                </div>
+                            </div>
+                            <input class="mt-16 submit-btn" type="submit" value="SEND">
+                        </form>
+                    </div>
+
+                </div>
             </div>
+            <!-- End contact section -->
+
+            <div class="map-section"><img src="./assets/img/map/map.jpg" alt="Map"></div>
+            <div class="clear"></div>
         </div>
 
+        <!-- Footer -->
+        <div class="footer">
+            <div class="social-icon">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-pinterest"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+            </div>
 
-        <div id="footer">
-
+            <p class="copy-right">Power by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
         </div>
 
         <div class="modal js-modal">
@@ -166,9 +206,9 @@
                     </div>
                 </div>
 
-                <footer id="modal-footer">
+                <div id="modal-footer">
                     <p class="modal-need-help">Need <a href="#" class="modal-help">help?</a></p>
-                </footer>
+                </div>
             </div>
         </div>
     </div>
@@ -194,6 +234,9 @@
         })
         modal.addEventListener('click', closeBuyModal)
     </script>
+
+
+
 </body>
 
 <!-- 

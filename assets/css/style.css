@@ -6,11 +6,7 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: Lato, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-}
+/* Reuse */
 
 .clear {
     clear: both;
@@ -18,6 +14,53 @@ html {
 
 .white-text {
     color: #fff !important;
+}
+
+/* Grid */
+
+.row {
+    margin: 0 -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+    display: block;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+/* Main */
+
+html {
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 #main {
@@ -141,7 +184,7 @@ html {
 
 
 #content {
-    height: 1000px;
+    min-height: 1000px;
 }
 
 #content .content-section {
@@ -231,12 +274,6 @@ html {
     margin: 0 -16px;
 }
 
-.tour-place .body-place {
-    width: 33.3%;
-    float: left;
-    padding: 0 8px ;
-}
-
 .tour-place .place-img {
     width: 100%;
     display: block;
@@ -282,10 +319,6 @@ html {
     background-color: #ccc;
     color: #000;
     cursor: pointer;
-}
-
-#footer {
-    height: 10px;
 }
 
 .modal {
@@ -415,4 +448,83 @@ p.modal-need-help {
         /* transform: translateY(0px); */
         opacity: 1;
     }
+}
+
+/* Contact form */
+
+.contact-content {
+    padding: 32px 0;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.form-control {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 7px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-content .submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    float: right;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contact-content .submit-btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Map section */
+
+
+.map-section img {
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    opacity: 0.6;
+    padding: 64px 16px;
+    display: block;
+    text-align: center;
+}
+
+.footer .social-icon a {
+    text-decoration: none;
+}
+
+.footer .social-icon i {
+    letter-spacing: 8px;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #000;
+}
+
+.footer .social-icon i:hover {
+    opacity: 0.5;
+}
+
+.footer .copy-right {
+    margin: 16px 0;
+}
+
+.footer .copy-right a {
+    color: #000;
 }
