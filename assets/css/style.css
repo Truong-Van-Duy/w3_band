@@ -298,6 +298,7 @@ html {
     align-items: center;
     justify-content: center;
     display: none;
+    animation: modalOpen ease 0.5s;
 }
 
 .js-modal.open {
@@ -310,7 +311,7 @@ html {
     min-height: 400px;
     background-color: #fff;
     position: relative;
-    animation: modalEase ease 0.5s;
+    animation: modalContainerOpen ease 0.5s;
 }
 
 .modal-close-icon {
@@ -392,7 +393,7 @@ p.modal-need-help {
     color: #2196F3;
 }
 
-@keyframes modalEase {
+@keyframes modalContainerOpen {
     from {
         transform: translateY(-160px);
         opacity: 0;
@@ -404,3 +405,14 @@ p.modal-need-help {
     }
 }
 
+@keyframes modalOpen {
+    from {
+        /* transform: translateY(-160px); */
+        opacity: 0;
+    }
+
+    to {
+        /* transform: translateY(0px); */
+        opacity: 1;
+    }
+}
