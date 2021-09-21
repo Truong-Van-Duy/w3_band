@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
     <title>The fake band</title>
@@ -38,6 +39,8 @@
             <div class="search-btn">
                 <i class="ti-search"></i>
             </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn"><i class="ti-menu"></i></div>
         </div>
 
         <!-- Slider -->
@@ -168,7 +171,8 @@
                 <li><a href="#"><i class="ti-twitter"></i></a></li>
                 <li><a href="#"><i class="ti-linkedin"></i></a></li>
             </ul>
-            <div class="copy-right my-16">Power by <a href="https://www.w3schools.com/w3css/default.asp" class="w3-link">w3.css</a></div>
+            <div class="copy-right my-16">Power by <a href="https://www.w3schools.com/w3css/default.asp"
+                    class="w3-link">w3.css</a></div>
         </div>
     </div>
 
@@ -225,6 +229,30 @@
     })
     modal.addEventListener('click', closeTicketModal)
 
+</script>
+
+<script>
+    var header = document.getElementById('header')
+    var mobileMenu = document.getElementById('mobile-menu')
+    var headerHeight = header.clientHeight
+
+    mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === headerHeight
+        if (isClosed) {
+            header.style.height = 'auto'
+        }
+        else {
+            header.style.height = null
+        }
+    }
+
+    var menuItems = document.querySelectorAll('#nav li a')
+    for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i]
+        menuItem.onclick = function () {
+            header.style.height = null
+        }
+    }
 </script>
 
 </html>
