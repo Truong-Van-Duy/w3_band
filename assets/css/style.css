@@ -72,6 +72,10 @@ html {
     margin: 16px 0;
 }
 
+.mt-16 {
+    margin-top: 16px;
+}
+
 .my-10 {
     margin: 10px 0;
 }
@@ -106,6 +110,7 @@ html {
     background-color: #000;
     position: fixed;
     z-index: 1;
+    overflow: hidden;
 }
 
 /* Navigation */
@@ -388,7 +393,7 @@ form .send-btn {
 .modal-container {
     position: absolute;
     width: 900px;
-    max-width: calc(100% - 16px);
+    max-width: calc(100% - 32px);
     min-height: 200px;
     background-color: #fff;
     animation: openModalContainer ease 0.5s;

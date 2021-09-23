@@ -10,6 +10,26 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    .mobile-col {
+        width: 100%;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #slider .slider-text {
+        display: none;
+    }
+
     #nav {
         display: block;
     }
@@ -39,19 +59,4 @@
         padding: 12px 40px;
     }
 
-    #header {
-        overflow: hidden;
-    }
-
-    #header .search-btn {
-        display: none;
-    }
-
-    #header .mobile-menu-btn {
-        display: block;
-    }
-
-    #slider .slider-text {
-        display: none;
-    }
 }
