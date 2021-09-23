@@ -80,6 +80,10 @@ html {
     margin: 10px 0;
 }
 
+.mt-8 {
+    margin-top: 8px;
+}
+
 .btn {
     display: inline-block;
     font-size: 15px;
