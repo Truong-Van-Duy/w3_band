@@ -22,11 +22,36 @@
         display: inline-block;
     }
 
+    #header #nav .sub-nav {
+        display: none;
+        position: initial;
+        background-color: #333;
+        color: #fff;
+    }
+
+    #header #nav .open-sub-nav {
+        display: block;
+    }
+    
+    #nav .sub-nav a {
+        background-color: #333;
+        color: #fff;
+        padding: 12px 40px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
     #header .search-btn {
         display: none;
     }
 
     #header .mobile-menu-btn {
         display: block;
+    }
+
+    #slider .slider-text {
+        display: none;
     }
 }

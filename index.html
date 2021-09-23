@@ -27,7 +27,7 @@
                         More
                         <i class="arrow-down ti-angle-down"></i>
                     </a>
-                    <ul class="sub-nav">
+                    <ul class="sub-nav open-sub-nav">
                         <li><a href="#">Merchandise</a></li>
                         <li><a href="#">Extras</a></li>
                         <li><a href="#">Media</a></li>
@@ -235,6 +235,9 @@
     var headerHeight = header.clientHeight
 
     mobileMenu.onclick = function () {
+        if (subnav.classList.contains('open-sub-nav'))
+            subnav.classList.remove('open-sub-nav')
+
         var isClosed = header.clientHeight === headerHeight
         if (isClosed) {
             header.style.height = 'auto'
@@ -244,13 +247,26 @@
         }
     }
 
-    var menuItems = document.querySelectorAll('#nav li a')
+    var subnav = document.querySelector('.sub-nav')
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
     for (var i = 0; i < menuItems.length; i++) {
         var menuItem = menuItems[i]
+
         menuItem.onclick = function () {
-            header.style.height = null
+            var isParent = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-nav')
+            if (!isParent) {
+                header.style.height = null
+            }
+            else {
+                event.preventDefault()
+                if (!subnav.classList.contains('open-sub-nav'))
+                    subnav.classList.add('open-sub-nav')
+                else
+                    subnav.classList.remove('open-sub-nav')
+            }
         }
     }
+
 
 </script>
 

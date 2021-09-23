@@ -106,7 +106,6 @@ html {
     background-color: #000;
     position: fixed;
     z-index: 1;
-    overflow: hidden;
 }
 
 /* Navigation */
